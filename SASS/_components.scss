@@ -3,6 +3,7 @@ $color-main: #0075ff;
 
 //*Mixins
 @mixin btn-base{
+    font-weight: 600;
     padding: 0.25rem 1.5rem;
     border-radius: 0.25rem;
 }
@@ -47,10 +48,20 @@ $color-main: #0075ff;
 }
 
 .main-menu{
+    margin-bottom: 0;
+    font-weight: 600;
     li{
-        font-size: 0.5rem;
+        font-size: 0.75rem;
         list-style: none;
         display: inline;
+        a{
+            color: black;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }
 }
 
